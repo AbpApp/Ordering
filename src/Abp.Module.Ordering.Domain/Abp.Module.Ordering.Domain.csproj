@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\configureawait.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Abp.Module.Ordering</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Ddd.Domain" Version="2.3.0" />
+    <ProjectReference Include="..\Abp.Module.Ordering.Domain.Shared\Abp.Module.Ordering.Domain.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

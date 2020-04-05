@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+  <Import Project="..\..\configureawait.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Abp.Module.Ordering</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="2.3.0" />
+    <ProjectReference Include="..\Abp.Module.Ordering.Application.Contracts\Abp.Module.Ordering.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
